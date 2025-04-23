@@ -32,7 +32,4 @@ jobs:
         
     - name: Run tests with sharding
       run: |
-        pytest --splits ${{ matrix.shard }}/${{ strategy.job-total }}
-      env:
-        SHARD: ${{ matrix.shard }}
-        TOTAL_SHARDS: ${{ strategy.job-total }}
+        pytest --splits 3 --group ${{ matrix.group }}

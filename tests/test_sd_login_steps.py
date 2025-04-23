@@ -2,9 +2,12 @@ from pytest_bdd import given, when, then, scenarios, parsers
 from pages.sd_login_page import LoginPage
 from pages.sd_product_page import ProductPage
 from playwright.sync_api import Page
+import pytest
 
 scenarios('../tests/sd_login.feature')
 
+@pytest.mark.login
+@pytest.mark.smoke
 # Step definitions
 @given("the user is on the login page")
 def open_login_page(page: Page):

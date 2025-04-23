@@ -2,6 +2,17 @@ import pytest
 
 from pathlib import Path
 
+def pytest_configure(config):
+    config.addinivalue_line(
+        "markers", "login: mark test as a login test"
+    )
+    config.addinivalue_line(
+        "markers", "navigation: mark test as a navigation test"
+    )
+    config.addinivalue_line(
+        "markers", "smoke: mark test as a smoke test"
+    )
+
 def pytest_runtest_makereport(item, call) -> None:
     if call.when == "call":
         if call.excinfo is not None and "page" in item.funcargs:

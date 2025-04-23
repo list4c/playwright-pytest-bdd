@@ -32,4 +32,4 @@ jobs:
         
     - name: Run tests with sharding
       run: |
-        pytest --splits 3 --group ${{ matrix.group }}
+        pytest --splits 3 --shard ${{ matrix.shard }} 

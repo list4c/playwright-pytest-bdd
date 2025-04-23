@@ -1,0 +1,6 @@
+playwright>=1.25.1
+pytest>=7.1.2
+pytest-playwright>=0.3.0
+pytest-bdd>=6.0.1
+pytest-xdist>=3.5.0
+pytest-split>=0.8.0

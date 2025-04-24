@@ -1,8 +1,8 @@
 ## Attributions
 
 Using steps and features from following repositories:
-https://github.com/cmoir/playwright_pytest_bdd_example 
-https://github.com/andreagrandi/playwright-demo 
+- https://github.com/cmoir/playwright_pytest_bdd_example 
+- https://github.com/andreagrandi/playwright-demo 
 
 
 ## Playwright Python pytest_bdd example
